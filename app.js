@@ -77,7 +77,7 @@ function startVideoProcessing() {
     grayMat = new cv.Mat(videoHeight, videoWidth, cv.CV_8UC1);
 
     //Load the emotion model
-    loadEmotionModel('../../Resources/model.json');
+    loadEmotionModel('./Resources/model.json');
     //LOADING PRETRAINED CLASSIFIERS FOR FACE DETECTION
     faceClassifier = new cv.CascadeClassifier();
     faceClassifier.load('haarcascade_frontalface_default.xml');
